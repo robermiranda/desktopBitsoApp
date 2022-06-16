@@ -1,0 +1,21 @@
+{
+  "name": "bitsogw",
+  "version": "1.0.0",
+  "description": "desktop for bitso api",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "keywords": [
+    "bitso",
+    "electron",
+    "api"
+  ],
+  "author": "rm",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^8.2.5"
+  },
+  "dependencies": {}
+}

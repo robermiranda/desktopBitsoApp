@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Bitso Client</title>
+<!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+<link rel="stylesheet" href="css/spectre.min.css">
+<link rel="stylesheet" href="css/leftMenu.css">
+</head>
+<body>
+<div class="columns">
+    <div class="column col-2">
+        <div class="container p-2 container-left">
+            <div class="form-group">
+                <select id="operationsSelect" class="form-select">
+                    <option>OPERATIONS</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <select id="orderBookSelect" class="form-select">
+                    <option>BOOKS</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input id="input1" class="form-input" type="text" id="input-example-19" disabled>
+            </div>
+            <div class="form-group">
+                <button id="sendButton" class="btn btn-success btn-block" disabled>Send</button>
+            </div>
+            
+            <br>
+            <div id="placeOrderFormGroup">
+                <div class="form-group">
+                    <select id="sideSelect" class="form-select">
+                        <option>SIDE</option>
+                        <option value="buy">Buy</option>
+                        <option value="sell">Sell</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select id="typeSelect" class="form-select">
+                        <option>TYPE</option>
+                        <option value="market">Market</option>
+                        <option value="limit">Limit</option>
+                        <option value="stop">Stop</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select id="amountSelect" class="form-select">
+                        <option>CURRENCY</option>
+                        <option value="major">-</option>
+                        <option value="minor">-</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input id="amountInput" class="form-input" type="text" placeholder="amount">
+                </div>
+                <div class="form-group">
+                    <input id="priceInput" class="form-input" type="text" placeholder="price">
+                </div>
+                <div class="form-group">
+                    <input id="stopInput" class="form-input" type="text" placeholder="stop">
+                </div>
+                <div class="form-group">
+                    <button id="placeOrderButton" class="btn btn-success btn-block" disabled>Place Order</button>
+                </div>
+            </div>
+            <br>
+            <p id="operationDesc"></p>
+        </div>
+    </div>
+    <div class="column">
+        <!--div class="container p-2 p-fixed"-->
+        <div class="container container-right">
+            <div id="dispAreaTitle" class="panel-title">
+                <span class="label label-success label-rounded text-italic text-bold">
+                    Desktop Client for Bitso Exchange.
+                </span>
+                <br><br><br>
+                <p>
+                    Whith this client you can do everything you do on the web and more.
+                    Just select an operation, fill out the form if necessary
+                    and green send button.
+                </p>
+            </div>
+            
+            <p id="timeResult"></p>
+            
+            <span id="titleResult" class="label label-secondary"></span>
+            <table id="tableResult" class="table"></table>
+            <br>
+
+            <span id="titleResult2" class="label label-secondary"></span>
+            <table id="tableResult2" class="table"></table>
+            <br>
+
+            <span id="titleResult3" class="label label-secondary"></span>
+            <table id="tableResult3" class="table"></table>
+        </div>
+    </div>
+</div>
+<script src="js/domControllers.js"></script>
+<script src="js/requestControllers.js"></script>
+<script src="js/responseControllers.js"></script>
+</body>
+</html>
+

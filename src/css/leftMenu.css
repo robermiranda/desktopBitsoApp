@@ -1,0 +1,24 @@
+
+ul.menuLateralIzq {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.container-right {
+  width: 83%;
+  background-color: #ffffff;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.container-left {
+  background-color: #f1f1f1;
+  height: 100%;
+}
